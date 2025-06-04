@@ -1,4 +1,4 @@
-#pragma warning (disable:4326)
+п»ї#pragma warning (disable:4326)
 #include<iostream>
 using namespace std;
 
@@ -11,7 +11,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 
-	int a = 2;                // оригиналы переменных
+	int a = 2;                // РѕСЂРёРіРёРЅР°Р»С‹ РїРµСЂРµРјРµРЅРЅС‹С…
 	int b = 3;
 
 	cout << a << "\t" << b << endl;
@@ -22,7 +22,7 @@ void main()
 	cout << a << "\t" << b << endl;
 }
 
-//передача по указателю
+//РїРµСЂРµРґР°С‡Р° РїРѕ СѓРєР°Р·Р°С‚РµР»СЋ
 void Exchange(int* a, int* b)  
 {
 	int buffer = *a;
@@ -30,7 +30,7 @@ void Exchange(int* a, int* b)
 	*b = buffer;
 }
 
-//передача по ссылке
+//РїРµСЂРµРґР°С‡Р° РїРѕ СЃСЃС‹Р»РєРµ
 void Exchange(int& a, int& b)  
 {
 	int buffer = a;
