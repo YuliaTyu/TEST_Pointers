@@ -1,7 +1,11 @@
+#pragma warning (disable:4326)
 #include<iostream>
 using namespace std;
 
-void Exchange(int& c, int& f);
+
+void Exchange(int* a, int* b);
+void Exchange(int& a, int& b);
+
 
 void main()
 {
@@ -9,13 +13,27 @@ void main()
 
 	int a = 2;                // оригиналы переменных
 	int b = 3;
+
 	cout << a << "\t" << b << endl;
+	Exchange(&a, &b);
+	cout << a << "\t" << b << endl;
+
 	Exchange(a, b);
 	cout << a << "\t" << b << endl;
 }
-void Exchange(int& c, int& f) //копии значений переменных(без ” ј«ј“≈Ћ≈…) 
+
+//передача по указателю
+void Exchange(int* a, int* b)  
 {
-	int buffer = c;
-	c = f;
-	f = buffer;
+	int buffer = *a;
+	*a = *b;
+	*b = buffer;
+}
+
+//передача по ссылке
+void Exchange(int& a, int& b)  
+{
+	int buffer = a;
+	a = b;
+	b = buffer;
 }
