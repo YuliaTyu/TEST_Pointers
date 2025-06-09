@@ -6,12 +6,12 @@ void Print(int arr[], const int n);
 int* Push_back(int arr[], int& n, const int value);       //добавление элемента в конец массива
 int* Push_front(int arr[], int& n, const int value);      //добавление элемента в начало массива
 
-int* insert(int arr[], int& n, const int value, int index);//добавление элемента по индексу
+int* insert(int arr[], int& n, const int value, int index);//добавление значения в массив по указанному индексу
 
 int* Pop_back(int arr[], int& n);                         //удаляет последний элемент массива(&размер по ссылке)
 int* Pop_front(int arr[], int& n);                        //удаляет нулевой элемент массива
 
-int* Erase(int arr[], int& n, const int index);           //удаляет элемент массива по указанному индексу
+int* Erase(int arr[], int& n, const int index);           //удаляет значение из массива по указанному индексу
 
 
 
