@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TEST_Pointers", "TEST_Point
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TEST_TrancferParameters", "TEST_TrancferParameters\TEST_TrancferParameters.vcxproj", "{DF69F83D-F66B-4CF0-AAEA-387254A91590}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TEST_Split", "TEST_Split\TEST_Split.vcxproj", "{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{DF69F83D-F66B-4CF0-AAEA-387254A91590}.Release|x64.Build.0 = Release|x64
 		{DF69F83D-F66B-4CF0-AAEA-387254A91590}.Release|x86.ActiveCfg = Release|Win32
 		{DF69F83D-F66B-4CF0-AAEA-387254A91590}.Release|x86.Build.0 = Release|Win32
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Debug|x64.ActiveCfg = Debug|x64
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Debug|x64.Build.0 = Debug|x64
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Debug|x86.ActiveCfg = Debug|Win32
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Debug|x86.Build.0 = Debug|Win32
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Release|x64.ActiveCfg = Release|x64
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Release|x64.Build.0 = Release|x64
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Release|x86.ActiveCfg = Release|Win32
+		{078DAA97-BA5C-4605-8E5F-E35D2A14A2AD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
