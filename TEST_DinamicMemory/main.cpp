@@ -40,6 +40,7 @@ void Push_col_front(int** arr, const int rows, int& cols); //добавляет 
 void Pop_col_back(int** arr, const int rows, int& cols);    //удалет столбик из конца массива
 int** Pop_col_front(int** arr, int rows, int& cols);    //удалет столбик из начала массива
 int** Erase_row(int** arr, int& rows, const int cols, int index); // удаляет строку по указаному индексу
+int** Erase_col(int** arr, const int rows, int& cols, int index_3);
 
 
 int** Insert_row(int** arr, int& rows, const int cols, const int index_2);                 //доб строку в массив по указателю
@@ -137,7 +138,10 @@ void main()
 	arr = Insert_row(arr, rows, cols, index);
 	Print(arr, rows, cols);
 	
-
+	int index_3;
+	cout << "Введите индекс удаляемого столбца значения"; cin >> index_3;
+	arr = Erase_col(arr, rows, cols, index_3);
+	Print(arr, rows, cols);
 
 	Clear(arr, rows, cols); // - УДАЛИТЬ ИЗ ПАМЯТИ
 
@@ -354,6 +358,19 @@ int** Erase_row(int** arr, int& rows, const int cols, int index)
 	delete[] arr;
 	rows--;
 	return buffer;
+}
+int** Erase_col(int** arr, const int rows, int& cols, int index_3)
+{
+	for (int i = 0; i < rows; i++)
+	{
+		int* buffer = new int[cols - 1];
+		for (int j = 0; j < index_3; j++)buffer[j] = arr[i][j];
+		for (int j = index_3; j < cols - 1; j++)buffer[j] = arr[i][j + 1];
+		delete[]arr[i];
+		arr[i] = buffer;
+	}
+	cols--;
+	return arr;
 }
 int** Insert_row(int** arr, int& rows, const int cols, const int index_2)
 {
